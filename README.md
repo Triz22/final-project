@@ -25,11 +25,11 @@ The target audience for 'AnimeWorld' are:
   
 These users will be looking for:
 
-An fun website, with information allowing them to further explore their interests supported by the opinions of others
-A website that clearly displays the range of animes being watched by the community
-Ability to make a user account in order to interact with the site content
-Ability to post, comment and like posts
-This website will offer all of these things whilst also allowing for intuitive navigation and conformability of use.
+* An fun website, with information allowing them to further explore their interests supported by the opinions of others
+* A website that clearly displays the range of animes being watched by the community
+* Ability to make a user account in order to interact with the site content
+* Ability to post, comment and like posts
+* This website will offer all of these things whilst also allowing for intuitive navigation and conformability of use.
 
 ### User Stories 
 
