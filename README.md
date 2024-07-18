@@ -13,7 +13,25 @@ This is a full-stack framework project built using Django, Python, HTML and CSS.
 9. Deployment
 10. Credits
 
-## User Stories 
+## UX
+
+Using the core UX principles I first started with Strategy, thinking about the target audience & the features they would benefit from.
+
+The target audience for 'AnimeWorld' are:
+
+* is inclusive of all age groups however targets the younger demographic between 12-18
+* everyone who is looking for new animes to watch.
+* people who like to talk about their experience with others
+  
+These users will be looking for:
+
+An fun website, with information allowing them to further explore their interests supported by the opinions of others
+A website that clearly displays the range of animes being watched by the community
+Ability to make a user account in order to interact with the site content
+Ability to post, comment and like posts
+This website will offer all of these things whilst also allowing for intuitive navigation and conformability of use.
+
+### User Stories 
 
 * As a registered user, I want to comment on blog posts and to engage in conversations and share my opinions.
 * As a user, I would like to view a blog post likes so that I can find the most interesting one.
