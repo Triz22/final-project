@@ -34,6 +34,7 @@ These users will be looking for:
 ### User Stories 
 
 * As a registered user, I want to comment on blog posts and to engage in conversations and share my opinions.
+* As a logged-in User I can like and unlike posts so that I can identify which animes I might explore in the future.
 * As a user, I would like to view a blog post likes so that I can find the most interesting one.
 * As a mobile user, I want the site to be responsive so that I can easily browse and interact with the blog on my smartphone or tablet.
 * As a user, I want to embed and watch images/trailers within blog posts so that I can get a visual preview of the anime being discussed.
