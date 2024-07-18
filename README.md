@@ -11,5 +11,5 @@
 * As a User, I can register for an account so that I can interact with the site content.
 * As a User, I can log in/out off my account if I wish so that I can connect or disconnect from the website.
 * As a User, I can easily navigate through the site so that I can view desired content.
-* As a site Admin, I can access the admin panel so that I can manage posts and comments.
+* As a site Admin, I can access the admin panel so that I can manage posts,comments and new content.
 * As a user I can see if I'm logged-in or logged-out so that I can be sure what my status is.
