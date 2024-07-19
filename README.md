@@ -46,3 +46,7 @@ These users will be looking for:
 * As a User, I can easily navigate through the site so that I can view desired content.
 * As a site Admin, I can access the admin panel so that I can manage posts,comments and news content.
 
+### Databade Schema
+![Screenshot_19-7-2024_102714_dbdiagram io](https://github.com/user-attachments/assets/de494ce3-3bc1-4e2e-8202-50f27448c6e3)
+
+
