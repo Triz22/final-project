@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-triz22-finalproject-rhh4le8xubk.ws.codeinstitute-ide.net',
+    '8000-triz22-finalproject-fynwfa6also.ws-eu115.gitpod.io',
     '.herokuapp.com',
 ]
 
@@ -100,7 +100,11 @@ DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.codeanyapp.com",
+    "https://8000-triz22-finalproject-fynwfa6also.ws-eu115.gitpod.io",
+    "https://*.herokuapp.com"
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
