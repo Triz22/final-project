@@ -30,6 +30,10 @@ class Post(models.Model):
     recommended = models.BooleanField(default=True)
     likes = models.ManyToManyField(User,related_name='blog_likes',blank=True)
 
+    def __str__(self):
+        return f"The anime I am currently watching is {self.anime_title} !!!"
+       
+
 class Comment(models.Model):
     author = models.ForeignKey(User,on_delete=models.CASCADE,max_length=70)
     post = models.ForeignKey(Post,on_delete=models.CASCADE, related_name='comments_post_name')

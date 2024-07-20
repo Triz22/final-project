@@ -7,6 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Anime Worlds</h1>
+    <h1>Anime World</h1>
+    <table>
+        {% for post in posts %}
+        <tr>
+            <td>{{post.anime_title}}</td>
+            <td>{{post.recommended}}</td>
+        </tr>
+        {% endfor %}
+        </table>
 </body>
 </html>
