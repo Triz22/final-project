@@ -1,20 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Anime World</h1>
-    <table>
-        {% for post in posts %}
-        <tr>
-            <td>{{post.anime_title}}</td>
-            <td>{{post.recommended}}</td>
-        </tr>
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+<div class="container">
+    <div class="row text-center">
+        <div class="div">
+            <h1>Anime World</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        {% for post in object_list %}
+        <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3 mb-4">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">{{post.anime_title}}</h5>
+                  <p class="card-text">{{post.description |truncatechars:100}}.</p>
+                  <p class="card-text">{{post.created_on}}.</p>
+                  
+                </div>
+              </div>
+        </div>
         {% endfor %}
-        </table>
-</body>
-</html>
+    </div>
+</div>
+
+
+
+{% endblock %}
