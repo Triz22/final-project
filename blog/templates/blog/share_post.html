@@ -2,6 +2,8 @@
 
 {% block content %}
 
+{% load crispy_forms_tags %}
+
 {% load static %}
 
 <!-- TITLE -->
@@ -21,7 +23,7 @@
         <div class="col-10 mt-3 offset-1 g-0">
             <form method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
-                {{ post_form }}
+                {{ post_form |crispy }}
                 <button class="btn btn-secondary right mb-2" type="submit" value="Save">Add Recipe</button>
             </form>
         </div>
