@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load static %}
+
+<!-- TITLE -->
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center mt-5">
+            <h2>Add Post</h2>
+            <hr>
+        </div>
+    </div>
+</div>
+
+
+<!-- RECIPE FORM -->
+<div class="container">
+    <div class="row">
+        <div class="col-10 mt-3 offset-1 g-0">
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ post_form }}
+                <button class="btn btn-secondary right mb-2" type="submit" value="Save">Add Recipe</button>
+            </form>
+        </div>
+    </div>
+</div>
+ 
+
+
+{%endblock%}
