@@ -3,7 +3,7 @@ from .models import Post
 
 
 class PostForm(forms.ModelForm):
-    """ Recipe Form """
+    """ Share Post Form """
     class Meta:
         """ fields for recipe form"""
         model = Post

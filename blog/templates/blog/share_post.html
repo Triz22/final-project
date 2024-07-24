@@ -2,7 +2,7 @@
 
 {% block content %}
 
-{% load crispy_forms_tags %}
+{% load crispy_forms_tags%}
 
 {% load static %}
 
@@ -10,7 +10,7 @@
 <div class="container">
     <div class="row">
         <div class="col-12 text-center mt-5">
-            <h2>Add Post</h2>
+            <h2>Share Post</h2>
             <hr>
         </div>
     </div>
@@ -23,8 +23,8 @@
         <div class="col-10 mt-3 offset-1 g-0">
             <form method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
-                {{ post_form |crispy }}
-                <button class="btn btn-secondary right mb-2" type="submit" value="Save">Add Recipe</button>
+                {{ post_form | crispy }}
+                <button class="btn btn-secondary right mb-2" type="submit" value="Save">Share</button>
             </form>
         </div>
     </div>
