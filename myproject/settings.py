@@ -57,7 +57,7 @@ INSTALLED_APPS = [
     'blog',  
 ]
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_TEMPLATE_PACK = 'crispy-bootstrap4'
 
 SITE_ID = 1
 LOGIN_REDIRECT_URL = 'URL'
