@@ -14,5 +14,5 @@ class CommentForm(forms.ModelForm):
     """ Collect user input as comment"""
     class Meta:
         """single body field for comment"""
-        model = Post 
-        fields = ('body')
+        model = Comment 
+        fields = ('body',)

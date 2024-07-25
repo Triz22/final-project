@@ -30,26 +30,25 @@ class SharePost(View):
         return redirect('blog_list')
         
 
+def post_detail(request, post_id):
+    """ Post detail view"""
+    queryset = Post.objects.all()
+    post = get_object_or_404(queryset, pk=post_id)
+    context = {
+        'post': post,
+    }
+    return render(request, 'blog/post_detail.html', context)
+
     
+# class PostDetails(View):
+#     """ view for Post Details"""
 
-# class PostDetail(View):
-    # def post_detail(request, slug):
-    #     """
-    #     Display an individual :model:`blog.Post`.
+#     def get(self, request, slug):
+#         """What happens for a GET request"""
+#         queryset = Post.objects.all()
+#         post = get_object_or_404(queryset, slug=slug)
+#         context={
+#             "post": post,
+#         }
 
-    #     **Context**
-
-    #     ``post``
-    #         An instance of :model:`blog.Post`.
-
-    #     **Template:**
-
-    #     :template:`blog/post_detail.html`
-    #     """
-
-    #     queryset = Post.objects.filter(status=1)
-    #     post = get_object_or_404(queryset, slug=slug)
-
-    #     return render(request,"blog/post_detail.html",
-    #     {"post": post},
-    # )
+#         return render(request,"post_detail.html", context)
