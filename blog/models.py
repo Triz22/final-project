@@ -32,6 +32,11 @@ class Post(models.Model):
 
     def __str__(self):
         return f"The anime I am currently watching is {self.anime_title} !!!"
+
+
+    def get_absolute_url(self):
+        """Sets absolute URL"""
+        return reverse('bloglist')
        
 
 class Comment(models.Model):
