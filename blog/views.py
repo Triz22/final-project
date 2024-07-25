@@ -7,6 +7,14 @@ from .forms import PostForm, CommentForm
 
 # Create your views here.
 
+
+class HomePage(View):
+    """
+    Home page view
+    """
+    def get(self, request):
+        return render(request, 'blog/index.html')
+
 class PostList (generic.ListView):
     queryset = Post.objects.all().order_by('-created_on')
     template_name = 'blog/blog_list.html'
@@ -48,10 +56,7 @@ def post_detail(request, post_id):
     """ Post detail view"""
     queryset = Post.objects.all()
     post = get_object_or_404(queryset, pk=post_id)
-    context = {
-        'post': post,
-        'comment_form':comment_form,
-    }
+
 
     if request.method == "POST":
         comment_form = CommentForm(data=request.POST)
@@ -67,7 +72,10 @@ def post_detail(request, post_id):
     else:
         comment_form = CommentForm()
 
-
+    context = {
+        'post': post,
+        'comment_form':comment_form,
+    }
     return render(request, 'blog/post_detail.html', context)
 
 
