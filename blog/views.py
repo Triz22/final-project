@@ -56,6 +56,7 @@ def post_detail(request, post_id):
     """ Post detail view"""
     queryset = Post.objects.all()
     post = get_object_or_404(queryset, pk=post_id)
+    comments = post.comments_post_name.all().order_by("-created_on")
 
 
     if request.method == "POST":
@@ -75,6 +76,7 @@ def post_detail(request, post_id):
     context = {
         'post': post,
         'comment_form':comment_form,
+        'comments':comments
     }
     return render(request, 'blog/post_detail.html', context)
 
