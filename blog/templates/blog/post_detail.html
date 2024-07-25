@@ -27,8 +27,15 @@
                 <p class="card-text">
                     {{ post.description | safe }}
                 </p>
-                <p>
-                    {{post.recommended}}
+                <p>                    
+                    {% if post.recommended is True %}
+                        <p>I'm recommending this Anime</p>
+                    {% else %}
+                        <p>Not recommended!</p>
+                    {% endif %}
+                  
+
+                    <!-- {{post.recommended}} -->
                 </p>
                 <p>
                     {{post.rating}}
