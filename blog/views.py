@@ -1,5 +1,6 @@
-from django.shortcuts import render, redirect, get_object_or_404
-from django.views import generic, View, UpdateView
+from django.shortcuts import render, redirect, get_object_or_404, reverse
+from django.views import generic, View
+from django.views.generic import UpdateView
 from django.contrib import messages
 from .models import Post
 from .forms import PostForm, CommentForm
