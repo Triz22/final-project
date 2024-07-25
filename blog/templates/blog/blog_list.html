@@ -20,6 +20,17 @@
                   <p class="card-text">{{post.created_on}}.</p>
                 </a>
                 </div>
+                {% if user.is_authenticated and user.id == post.author.id %}
+                <div class="text-center mb-2">
+                    <!-- EDIT AND DELETE BUTTONS -->
+                    <span>
+                    <a href="#"><button class="btn btn-success ">Edit</button></a></span>
+                    <span>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal{{post.id}}">Delete</button>
+                    </span>
+                    <!-- END OF BUTTONS -->
+                 </div>
+                {% endif %}
             </div>
         </div>
         {% endfor %}
