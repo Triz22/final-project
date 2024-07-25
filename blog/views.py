@@ -7,7 +7,7 @@ from .forms import PostForm
 # Create your views here.
 
 class PostList (generic.ListView):
-    queryset = Post.objects.all()
+    queryset = Post.objects.all().order_by('-created_on')
     template_name = 'blog/blog_list.html'
     paginate_by = 10
 
@@ -21,13 +21,26 @@ class SharePost(View):
             request, "blog/share_post.html", {"post_form": PostForm()})
 
     def post(self, request):
-        if request.method == "POST":
-            post_form = PostForm(data=request.POST)
-            if post_form.is_valid():
-                post_form.save()
-                messages.add_message(request, messages.SUCCESS, "Post successfully shared! Thanks for being such a good clan member, the clan appreciates it!")
+        """What happens for a POST request"""
+        post_form = PostForm(request.POST, request.FILES)
 
-        return redirect('blog_list')
+        if post_form.is_valid():
+            post = post_form.save(commit=False)
+            post.author = request.user
+            post.save()
+            return redirect('bloglist')
+        else:
+            messages.error(self.request, 'Please complete all required fields')
+            post_form = PostForm()
+
+        return render(
+            request,
+            "blog/share_post.html",
+            {
+                "post_form": post_form
+
+            },
+        )
         
 
 def post_detail(request, post_id):
