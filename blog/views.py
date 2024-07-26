@@ -60,9 +60,9 @@ def post_detail(request, post_id):
     queryset = Post.objects.all()
     post = get_object_or_404(queryset, pk=post_id)
     comments = post.comments_post_name.all().order_by("-created_on")
-    liked = False
-    if post.likes.filter(id=self.request.user.id).exists():
-            liked = True
+    # liked = False
+    # if post.likes.filter(id=self.request.user.id).exists():
+    #         liked = True
 
 
 
@@ -107,5 +107,5 @@ class PostLike(View):
          if post.likes.filter(id=request.user.id).exists():
             post.likes.remove(request.user)
          else:
-            post.likes.remove(request.user)
+            post.likes.add(request.user)
          return HttpResponseRedirect(reverse('post_detail', args=[post_id]))      

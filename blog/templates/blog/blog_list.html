@@ -32,6 +32,19 @@
                  </div>
                 {% endif %}
             </div>
+            <!-- Like/Unlike Button-->
+            <div>
+                <form method="post" action="{% url 'post_like_toggle' post.id %}">
+                    {% csrf_token %}
+                    <button type="submit">
+                        {% if user in post.likes.all %}
+                            Unlike
+                        {% else %}
+                            Like
+                        {% endif %}
+                    </button>
+                </form>
+            </div>
         </div>
         {% endfor %}
     </div>
