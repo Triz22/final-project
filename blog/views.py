@@ -1,7 +1,10 @@
 from django.shortcuts import render, redirect, get_object_or_404, reverse
+from django.http import HttpResponseRedirect
 from django.views import generic, View
 from django.views.generic import UpdateView
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 from .models import Post
 from .forms import PostForm, CommentForm
 
@@ -90,3 +93,18 @@ class EditPost(UpdateView):
     model = Post
     template_name = 'blog/edit_post.html'
     form_class = PostForm
+
+class PostLike(View):
+    """
+    Like and unlike post class based view
+    """
+
+    def post(self, request,post_id):
+         
+         post = get_object_or_404(Post, id=post_id)
+
+         if post.likes.filter(id=request.user.id).exists():
+            post.likes.remove(request.user)
+         else:
+            post.likes.remove(request.user)
+         return HttpResponseRedirect(reverse('post_detail', args=[post_id]))      
