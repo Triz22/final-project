@@ -27,8 +27,7 @@
                 <span>
                     <a href="{% url 'edit_post' post.id %}"><button class="btn btn-success ">Edit</button></a></span>
                 <span>
-                    <button type="button" class="btn btn-danger" data-toggle="modal"
-                        data-target="#deleteModal{{post.id}}">Delete</button>
+                    <a href="{% url 'delete' post.id %}"><button type="button" class="btn btn-danger">Delete</button></a>
                 </span>
                 <!-- END OF BUTTONS -->
             </div>
