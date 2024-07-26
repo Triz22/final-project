@@ -109,3 +109,17 @@ class PostLike(View):
          else:
             post.likes.add(request.user)
          return HttpResponseRedirect(reverse('post_detail', args=[post_id]))      
+
+class NewsPage(generic.ListView):
+
+    queryset = News.objects.all().order_by('created_on')
+    template_name = 'blog/news.html'
+    
+def delete_post(request, post_id):
+    """
+    Deletes post
+    """
+    post = get_object_or_404(Post, id=post_id)
+    post.delete()
+    return redirect(reverse(
+        'your_recipes'))

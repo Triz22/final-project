@@ -18,6 +18,20 @@
                 <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="{{ post.title}}">
                 {% endif %}
             </div>
+
+            <!-- Like/Unlike button-->
+            <div class="container">
+                <form method="post" action="{% url 'post_like' post.id %}">
+                    {% csrf_token %}
+                    <button type="submit">
+                        {% if user in post.likes.all %}
+                        Unlike
+                        {% else %}
+                        Like
+                        {% endif %}
+                    </button>
+                </form>
+            </div>
             <p>
                 Likes: {{ post.total_likes }}
             </p>
@@ -29,7 +43,6 @@
                 <div class="col card mb-4  mt-3 left  top">
                     <div class="card-body">
                         <!-- The post content goes inside the card-text. -->
-                        <!-- Use the | safe filter inside the template tags -->
                         <p class="card-text">
                             {{ post.description | safe }}
                         </p>
