@@ -5,7 +5,7 @@ from django.views.generic import UpdateView
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
-from .models import Post
+from .models import Post, News
 from .forms import PostForm, CommentForm
 
 # Create your views here.
@@ -111,6 +111,8 @@ class PostLike(View):
          return HttpResponseRedirect(reverse('post_detail', args=[post_id]))      
 
 class NewsPage(generic.ListView):
+
+    # news = News
 
     queryset = News.objects.all().order_by('created_on')
     template_name = 'blog/news.html'
