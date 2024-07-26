@@ -94,6 +94,7 @@ class EditPost(UpdateView):
     template_name = 'blog/edit_post.html'
     form_class = PostForm
 
+@method_decorator(login_required,name='dispatch')
 class PostLike(View):
     """
     Like and unlike post class based view
