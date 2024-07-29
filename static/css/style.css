@@ -1,12 +1,51 @@
-/* body {
-    background-color: #F5EFFF;
+/* General Styles */
+body {
+    background-color: #f8f9fa;
 }
 
-header {
-    background: #7E8987;
-    height:66px;
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
 }
 
-header * {
-    color: #000;
-} */
+/* Welcome Box */
+.welcome-box {
+    border: 2px solid red;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.japanese-text {
+    font-size: 3rem;
+    border: 2px solid red;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.welcome-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Social Icons */
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: #3498db;
+}
+
+/* Footer */
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
