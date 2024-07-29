@@ -21,7 +21,7 @@ class HomePage(View):
 class PostList (generic.ListView):
     queryset = Post.objects.all().order_by('-created_on')
     template_name = 'blog/blog_list.html'
-    paginate_by = 10
+    paginate_by = 5
 
 
 class SharePost(View):
