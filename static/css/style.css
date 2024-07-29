@@ -1,0 +1,12 @@
+body {
+    background-color: #F5EFFF;
+}
+
+header {
+    background: #7E8987;
+    height:66px;
+}
+
+header * {
+    color: #000;
+}
