@@ -59,6 +59,8 @@
                         </p>
                         <p>{{ comment.body | linebreaks }}</p>
                     </div>
+                    {% empty %}
+                    <p>No comments yet.</p>
                     {% endfor %}
                 </div>
             </div>
