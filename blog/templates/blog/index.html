@@ -6,6 +6,13 @@
 
 {% block content %}
 <section>
+    {% if messages %}
+    <div class="alert alert-info" role="alert">
+        {% for message in messages %}
+        {{ message }}
+        {% endfor %}
+    </div>
+    {% endif %}
     <div class="container-fluid text-center">
         <h1 class="mt-4">AnimeWorld</h1>
         <div class="row mt-4">
@@ -16,7 +23,8 @@
                 <div class="welcome-box">
                     <h2 class="japanese-text">ようこそ</h2>
                     <p class="welcome-text">
-                        This is AnimeWorld, a community where we encourage connections between users by allowing expression and discussion of our FAVOURITE animes!
+                        This is AnimeWorld, a community where we encourage connections between users by allowing
+                        expression and discussion of our FAVOURITE animes!
                         <br><br>
                         Wait no longer and join our crew!
                     </p>
