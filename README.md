@@ -46,7 +46,73 @@ These users will be looking for:
 * As a User, I can easily navigate through the site so that I can view desired content.
 * As a site Admin, I can access the admin panel so that I can manage posts,comments and news content.
 
-### Databade Schema
+### Database Schema
 ![Screenshot_19-7-2024_102714_dbdiagram io](https://github.com/user-attachments/assets/de494ce3-3bc1-4e2e-8202-50f27448c6e3)
+
+#### Bugs and Issues
+
+My header was dissappearing when I deployed because I did not gather my static files properly 'I had to run the collectstatic command line in the terminal'
+I couldn't upload an image when sharing a post because firstly my api key was incorrect it had '<>' around them which was needed to be removed, I then needed to make sure it matched the configuration variable settings on heroku.
+My home page would not load because I forgot to add an endif tag. I figures this out by reading the error information provided when debug is set to True.
+My share post function was not working when debug was set to false
+
+### Technologies used
+* Gitpod
+The website was developed using the Gitpod IDE.
+
+*HTML
+HTML served as the primary language for constructing the website’s structure.
+
+*CSS
+Styling for the website was applied using a separate CSS file.
+
+*Python
+Python was utilized in the development of the application.
+
+*Git
+Version control was managed with Git, including regular commits and pushes during development.
+
+*GitHub
+The website’s source code is available on GitHub and deployed via GitHub Pages.
+
+*Font Awesome
+Social media links in the footer were enhanced with icons from Font Awesome.
+
+*Bootstrap
+
+*Postgres
+
+*Cloudinary 
+
+*Bootstrap
+
+### Deployment 
+#### Github Deployment 
+
+The website was developed using Gitpod and uploaded to the 'final-project' repository on GitHub.
+
+The following Git commands were used during development to push the code to the remote repository:
+
+git add [file]: Added files to the staging area before committing.
+git commit -m [commit message]: Recorded and saved changes to the local repository.
+git push: Uploaded all committed changes to the GitHub repository.
+
+#### Heroku 
+
+Open the Heroku website and click "New" to create a new app.
+Provide an app name and region, then click "Create app".
+Navigate to "Settings" and click on "Config Vars". Add the following configuration variables:
+DISABLE_COLLECTSTATIC: 1
+SECRET_KEY: (Your secret key)
+DATABASE_URL: (Your database URL)
+CLOUDINARY_URL: (Your Cloudinary storage URL) 
+Go to the "Deploy" tab, select "GitHub" as the deployment method, enter the repository name, and connect.
+Under "Manual Deploy" at the bottom of the page, select the "main" branch and click "Deploy Branch".
+Once the deployment process is complete, the app will be live on Heroku after a short wait.
+
+
+
+
+
 
 
