@@ -8,6 +8,25 @@ h1 {
     font-weight: bold;
 }
 
+/* Navbar */
+
+.navbar-color {
+    background-color: #535351;
+}
+
+/* .navv {
+    baccolor: white !important;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: #ffc107 !important;
+} */
+
 /* Welcome Box */
 .welcome-box {
     border: 2px solid red;
@@ -40,6 +59,11 @@ h1 {
 }
 
 /* Footer */
+
+.footer-cr {
+    background-color: #535351;
+}
+
 footer p {
     margin-bottom: 10px;
 }
