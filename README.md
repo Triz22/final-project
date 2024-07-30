@@ -60,31 +60,31 @@ My share post function was not working when debug was set to false
 * Gitpod
 The website was developed using the Gitpod IDE.
 
-*HTML
+* HTML
 HTML served as the primary language for constructing the website’s structure.
 
-*CSS
+* CSS
 Styling for the website was applied using a separate CSS file.
 
-*Python
+* Python
 Python was utilized in the development of the application.
 
-*Git
+* Git
 Version control was managed with Git, including regular commits and pushes during development.
 
-*GitHub
+* GitHub
 The website’s source code is available on GitHub and deployed via GitHub Pages.
 
-*Font Awesome
+* Font Awesome
 Social media links in the footer were enhanced with icons from Font Awesome.
 
-*Bootstrap
+* Bootstrap
 
-*Postgres
+* Postgres
 
-*Cloudinary 
+* Cloudinary 
 
-*Bootstrap
+* Bootstrap
 
 ### Deployment 
 #### Github Deployment 
@@ -109,6 +109,8 @@ CLOUDINARY_URL: (Your Cloudinary storage URL)
 Go to the "Deploy" tab, select "GitHub" as the deployment method, enter the repository name, and connect.
 Under "Manual Deploy" at the bottom of the page, select the "main" branch and click "Deploy Branch".
 Once the deployment process is complete, the app will be live on Heroku after a short wait.
+
+### Credits
 
 
 
