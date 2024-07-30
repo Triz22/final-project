@@ -1,89 +1,63 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %}
+
+{% block content %}
 {% load static %}
 
 <div class="container mt-5 post-detail">
     <div class="row">
-        <div class="col-md-8 offset-md-2 text-center">
-            <!-- Post title goes in h1 tags -->
+        <div class="col-md-12 text-center">
             <h1 class="post-title">{{ post.anime_title }}</h1>
-
             <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
-            {% if "placeholder" in post.featured_image.url %}
-            <img src="{% static 'images/default.jpg' %}" class="img-fluid mb-4" alt="placeholder"
-                style="max-width: 60%; height: 100%;">
-            {% else %}
-            <img class="img-fluid mb-4" src=" {{ post.featured_image.url }}" alt="{{ post.title}}">
-            {% endif %}
         </div>
     </div>
     <div class="row">
-        <div class="col-md-8 card offset-md-2">
-            <div class="mb-4">
+        <div class="col-md-4">
+            {% if "placeholder" in post.featured_image.url %}
+                <img src="{% static 'images/default.jpg' %}" class="img-fluid mb-4" alt="placeholder">
+            {% else %}
+                <img src="{{ post.featured_image.url }}" class="img-fluid mb-4" alt="{{ post.title}}">
+            {% endif %}
+        </div>
+        <div class="col-md-8">
+            <div class="card mb-4">
                 <div class="card-body">
-                    <!-- The post content goes inside the card-text. -->
-                    <p class="card-text">
-                        {{ post.description | safe }}
-                    </p>
+                    <p class="card-text">{{ post.description | safe }}</p>
                     <p>
-                        {% if post.recommended is True %}
-                        <p>I'm recommending this Anime</p>
+                        {% if post.recommended %}
+                            <strong>Recommended:</strong> Yes
                         {% else %}
-                        <p>Not recommended!</p>
+                            <strong>Recommended:</strong> No
                         {% endif %}
-
-
-                        <!-- {{post.recommended}} -->
                     </p>
-                    <p>
-                        I rate this anime a <strong>{{post.rating}} out of 5</strong>
-                    </p>
+                    <p><strong>Rating:</strong> {{ post.rating }} out of 5</p>
                 </div>
             </div>
-        </div>
-
-        <!-- Like/Unlike button-->
-        <div class="text-center mb-4">
-            <form method="post" action="{% url 'post_like' post.id %}">
-                {% csrf_token %}
-                <button type="submit">
-                    {% if user in post.likes.all %}
-                    Unlike
-                    {% else %}
-                    Like
-                    {% endif %}
-                </button>
-            </form>
-        </div>
-        <p>
-            Likes: {{ post.total_likes }}
-        </p>
-    </div>
-
-
-    <div class="container">
-
-    </div>
-
-    <!-- Comments -->
-    <div class="container">
-        <h3>Comments:</h3>
-        <div class="card-body">
-            {% for comment in comments %}
-            <div class="comments mb-3">
-                <p class="font-weight-bold">
-                    {{ comment.author }}
-                    <span class=" text-muted font-weight-normal">
-                        {{ comment.created_on }}
-                    </span> wrote:
-                </p>
-                <p>{{ comment.body | linebreaks }}</p>
+            <div class="text-center mb-4">
+                <form method="post" action="{% url 'post_like' post.id %}">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-outline-primary">
+                        {% if user in post.likes.all %}
+                            Unlike
+                        {% else %}
+                            Like
+                        {% endif %}
+                    </button>
+                </form>
+                <p>Likes: {{ post.total_likes }}</p>
+            </div>
+            <h3>Comments:</h3>
+            <div class="card-body">
+                {% for comment in comments %}
+                    <div class="comment mb-3">
+                        <p class="font-weight-bold">{{ comment.author }}
+                            <span class="text-muted font-weight-normal">{{ comment.created_on }}</span> wrote:
+                        </p>
+                        <p>{{ comment.body | linebreaks }}</p>
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </div>
-
 </div>
-</div>
-
-{% endfor %}
 
 {% endblock content %}
