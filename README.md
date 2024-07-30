@@ -46,8 +46,43 @@ These users will be looking for:
 * As a User, I can easily navigate through the site so that I can view desired content.
 * As a site Admin, I can access the admin panel so that I can manage posts,comments and news content.
 
+### Structure
+#### Features Implemented
+
+##### User Authentication and Authorization
+- User Registration and Login: Secure user registration and login functionality, allowing users to create accounts and access personalized features.
+- Password Reset and Change: Users can reset their forgotten passwords and change their existing passwords.
+- 
+##### Post Management
+- Create, Read, Update, and Delete (CRUD) Posts: Authenticated users can create new posts, view detailed post pages, edit their posts, and delete them if necessary.
+- Image Upload: Users can upload images to accompany their posts.
+- 
+##### Comments
+- Comment on Posts: Authenticated users can leave comments on posts, fostering community interaction.
+- Display Comments: Comments are displayed on the post detail page, showing the author and timestamp.
+- 
+##### Likes
+- Like/Unlike Posts: Users can like or unlike posts to show their appreciation.
+- Like Count: Display the total number of likes each post has received.
+- 
+##### Post Recommendations
+- Recommendation Indicator: Posts can be marked as recommended by the author.
+- Display Recommendation: A clear indicator shows whether a post is recommended or not.
+ 
+##### Ratings
+- Anime Ratings: Users can rate animes, providing more insight on their experience of animes..
+
+##### Responsive Design
+- Mobile-Friendly Layout: The website features a responsive design, ensuring a good user experience on both desktop and mobile devices.
+- Bootstrap Integration: Utilizes Bootstrap for a modern and consistent UI.
+  
+##### Admin Panel
+- Django Admin: Utilizes Django's built-in admin interface for managing users, posts, comments, and other site content.
+
 ### Database Schema
 ![Screenshot_19-7-2024_102714_dbdiagram io](https://github.com/user-attachments/assets/de494ce3-3bc1-4e2e-8202-50f27448c6e3)
+
+### Surface
 
 #### Bugs and Issues
 
@@ -99,16 +134,14 @@ git push: Uploaded all committed changes to the GitHub repository.
 
 #### Heroku 
 
-Open the Heroku website and click "New" to create a new app.
-Provide an app name and region, then click "Create app".
-Navigate to "Settings" and click on "Config Vars". Add the following configuration variables:
-DISABLE_COLLECTSTATIC: 1
-SECRET_KEY: (Your secret key)
-DATABASE_URL: (Your database URL)
-CLOUDINARY_URL: (Your Cloudinary storage URL) 
-Go to the "Deploy" tab, select "GitHub" as the deployment method, enter the repository name, and connect.
-Under "Manual Deploy" at the bottom of the page, select the "main" branch and click "Deploy Branch".
-Once the deployment process is complete, the app will be live on Heroku after a short wait.
+- Open the Heroku website and click "New" to create a new app.
+- Provide an app name and region, then click "Create app".
+- Navigate to "Settings" and click on "Config Vars". Add the following configuration variables:
+ 1. DISABLE_COLLECTSTATIC: 1 2. SECRET_KEY: (Your secret key) 3. DATABASE_URL: (Your database URL)
+4. CLOUDINARY_URL: (Your Cloudinary storage URL) 
+- Go to the "Deploy" tab, select "GitHub" as the deployment method, enter the repository name, and connect.
+- Under "Manual Deploy" at the bottom of the page, select the "main" branch and click "Deploy Branch".
+- Once the deployment process is complete, the app will be live on Heroku after a short wait.
 
 ### Credits
 
