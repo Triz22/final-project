@@ -144,6 +144,9 @@ img {
     padding: 20px;
     border-radius: 10px;
     background-color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    max-width: 25rem;
 }
 
 form {
@@ -163,4 +166,15 @@ form .btn-signup {
 
 .text-center p {
     font-size: 1.1rem;
+}
+
+/* Signup */
+
+.s-container {
+    border: 2px solid red;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1rem;
 }
