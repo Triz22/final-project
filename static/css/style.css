@@ -54,7 +54,7 @@ body {
 }
 
 .social-icons a:hover {
-    color: #3498db;
+    color: red;
 }
 
 /* Post Detail */
@@ -140,7 +140,7 @@ img {
 }
 
 .text-container {
-    border: 2px solid black;
+    border: 2px solid red;
     padding: 20px;
     border-radius: 10px;
     background-color: #ffffff;
