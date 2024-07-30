@@ -1,12 +1,17 @@
 /* General Styles */
+
+html, body {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
     background-color: #f8f9fa;
 }
 
-h1 {
-    font-size: 3rem;
-    font-weight: bold;
-}
+
 
 /* Navbar */
 
@@ -20,19 +25,6 @@ h1 {
 .navbar-brand {
     font-weight: bold;
 }
-
-/* .navv {
-    baccolor: white !important;
-}
-
-.navbar-nav .nav-link {
-    color: white !important;
-}
-
-.navbar-nav .nav-link.active {
-    font-weight: bold;
-    color: #ffc107 !important;
-} */
 
 /* Welcome Box */
 .welcome-box {
@@ -115,9 +107,17 @@ h1 {
 
 /* Footer */
 
-.footer-cr {
+.footer {
+    margin-top: auto;
     background-color: #535351;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }
+
+/* .footer-cr {
+    background-color: #535351;
+} */
 
 footer p {
     margin-bottom: 10px;
@@ -144,7 +144,6 @@ img {
     padding: 20px;
     border-radius: 10px;
     background-color: #ffffff;
-    height: auto;
 }
 
 form {
