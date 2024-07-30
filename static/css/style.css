@@ -10,10 +10,16 @@ h1 {
 
 /* Navbar */
 
-.navbar-color {
+.navbar {
     background-color: #535351;
 }
 
+.navbar-nav {
+    margin-left: auto;
+}
+.navbar-brand {
+    font-weight: bold;
+}
 /* .navv {
     baccolor: white !important;
 }
