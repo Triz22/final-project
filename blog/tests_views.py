@@ -59,3 +59,9 @@ class BlogViewsTest(TestCase):
         response = self.client.get(reverse('edit_post', args=[self.post.id]))
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'blog/edit_post.html')
+
+    def test_news_page_view(self):
+        response = self.client.get(reverse('news'))
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'blog/news.html')
+        self.assertContains(response, self.news.title)
