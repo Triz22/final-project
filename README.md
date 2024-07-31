@@ -46,8 +46,17 @@ These users will be looking for:
 * As a User, I can easily navigate through the site so that I can view desired content.
 * As a site Admin, I can access the admin panel so that I can manage posts,comments and news content.
 
-### Structure
+### Scope
 #### Features Implemented
+
+##### Home page 
+- Welcome Image:
+The home page features a vibrant and engaging image of popular anime characters, instantly capturing the essence of the AnimeWorld blog. This image serves as a visual introduction, setting the tone for the content and community spirit of the site.
+- Welcome message:
+A text box beside the image welcomes visitors, encouraging them to join the AnimeWorld community by logging in or registering.
+
+![image](https://github.com/user-attachments/assets/9233cfd8-7042-458b-801b-ff2acd0d5d16)
+
 
 ##### User Authentication and Authorization
 - User Registration and Login: Secure user registration and login functionality, allowing users to create accounts and access personalized features.
