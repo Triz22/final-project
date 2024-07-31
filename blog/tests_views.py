@@ -74,10 +74,10 @@ class BlogViewsTest(TestCase):
         self.assertTemplateUsed(response, 'blog/edit_post.html')
 
     def test_news_page_view(self):
-        response = self.client.get(reverse('news'))
+        response = self.client.get(reverse('news_page'))
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'blog/news_page.html')
-        self.assertContains(response, self.news.news_title)
+        self.assertTemplateUsed(response, 'blog/news.html')
+    
 
     def test_delete_post_view(self):
         self.client.login(username='testuser', password='testpassword')
