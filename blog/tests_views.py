@@ -48,7 +48,7 @@ class BlogViewsTest(TestCase):
         response = self.client.get(reverse('post_detail', args=[self.post.id]))
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'blog/post_detail.html')
-        self.assertContains(response, self.post.title)
+        self.assertContains(response, self.post.anime_title)
 
     def test_post_like_view(self):
         self.client.login(username='testuser', password='testpassword')
@@ -74,7 +74,7 @@ class BlogViewsTest(TestCase):
     def test_news_page_view(self):
         response = self.client.get(reverse('news'))
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'blog/news.html')
+        self.assertTemplateUsed(response, 'blog/news_page.html')
         self.assertContains(response, self.news.news_title)
 
     def test_delete_post_view(self):
