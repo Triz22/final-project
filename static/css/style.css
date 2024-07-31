@@ -1,17 +1,21 @@
 /* General Styles */
 
-html, body {
+/* html, body {
     height: 100%;
-}
+    
+} */
 
 body {
-    display: flex;
-    flex-direction: column;
     margin: 0;
     background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-
+main {
+    flex: 1; /* This makes the main content area grow and fill the space */
+}
 
 /* Navbar */
 
@@ -108,16 +112,12 @@ body {
 /* Footer */
 
 .footer {
-    margin-top: auto;
     background-color: #535351;
     color: white;
     text-align: center;
     padding: 10px 0;
+    margin-top: auto;
 }
-
-/* .footer-cr {
-    background-color: #535351;
-} */
 
 footer p {
     margin-bottom: 10px;
@@ -178,7 +178,3 @@ form .btn-signup {
     margin-bottom: 20px;
     font-size: 1rem;
 }
-
-
-
-
