@@ -60,16 +60,23 @@ A text box beside the image welcomes visitors, encouraging them to join the Anim
 
 ##### User Authentication and Authorization
 - User Registration and Login: Secure user registration and login functionality, allowing users to create accounts and access personalized features.
-- Password Reset and Change: Users can reset their forgotten passwords and change their existing passwords.
-- 
+- Users can see that they're logged in when they receive a success message at the top of the screen and the last two elements of the navigation bar change to one 'logout'
+  ![image](https://github.com/user-attachments/assets/f163553b-38c5-4d65-9e2b-d27a7fe36330)
+
 ##### Post Management
-- Create, Read, Update, and Delete (CRUD) Posts: Authenticated users can create new posts, view detailed post pages, edit their posts, and delete them if necessary.
+- Create, Read, Update, and Delete (CRUD) Posts: Users can create new posts, view detailed post pages, edit their posts, and delete them if necessary.
+- Users can see their post has successfully been created as they are redirected back to the browse page.
 - Image Upload: Users can upload images to accompany their posts.
-- 
+- ![image](https://github.com/user-attachments/assets/d29685b8-0cbb-4824-a2bd-1993bc6a2335)
+- ![image](https://github.com/user-attachments/assets/ceb6c07e-eb18-4492-8b4d-a06faa1fcb48)
+- ![image](https://github.com/user-attachments/assets/9775abbd-0335-4ea5-bf36-7042c0d8d9b6)
+ 
 ##### Comments
 - Comment on Posts: Authenticated users can leave comments on posts, fostering community interaction.
 - Display Comments: Comments are displayed on the post detail page, showing the author and timestamp.
-- 
+- ![image](https://github.com/user-attachments/assets/79bcab8a-242f-4bc1-8cf9-b295c64d2386)
+
+
 ##### Likes
 - Like/Unlike Posts: Users can like or unlike posts to show their appreciation.
 - Like Count: Display the total number of likes each post has received.
