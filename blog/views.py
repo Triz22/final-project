@@ -96,7 +96,7 @@ class EditPost(UpdateView):
 
     def form_valid(self, form):
         form.save()
-        messages.success(self.request, 'Post submitted successfully!')
+        messages.success(self.request, 'Post updated successfully!')
         return redirect(self.get_success_url())
 
     def form_invalid(self, form):
@@ -136,5 +136,6 @@ def delete_post(request, post_id):
     """
     post = get_object_or_404(Post, id=post_id)
     post.delete()
+    messages.success(request, 'Post deleted successfully!.')
     return redirect(reverse(
         'bloglist'))
