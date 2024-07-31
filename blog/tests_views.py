@@ -41,3 +41,21 @@ class BlogViewsTest(TestCase):
         self.assertTemplateUsed(response, 'blog/post_detail.html')
         self.assertContains(response, self.post.title)
 
+    def test_post_like_view(self):
+        self.client.login(username='testuser', password='testpassword')
+        response = self.client.post(reverse('post_like', args=[self.post.id]))
+        self.assertEqual(response.status_code, 302)
+        self.assertTrue(self.post.likes.filter(id=self.user.id).exists())
+
+    def test_post_detail_view_post_comment(self):
+        self.client.login(username='testuser', password='testpassword')
+        data = {'body': 'New Comment'}
+        response = self.client.post(reverse('post_detail', args=[self.post.id]), data)
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue(Comment.objects.filter(body='New Comment').exists()) 
+ 
+    def test_edit_post_view_get(self):
+        self.client.login(username='testuser', password='testpassword')
+        response = self.client.get(reverse('edit_post', args=[self.post.id]))
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'blog/edit_post.html')
