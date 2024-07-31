@@ -17,7 +17,9 @@ class BlogViewsTest(TestCase):
         author=self.user,
         rating=5,
         recommended=True,
-       )
+        )
+        self.client.login(username='testuser', password='testpword')
+
 
     def test_home_page_view(self):
         response = self.client.get(reverse('home'))
