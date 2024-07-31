@@ -87,7 +87,7 @@ A text box beside the image welcomes visitors, encouraging them to join the Anim
 - Recommendation Indicator: Posts can be marked as recommended by the author.
 - Display Recommendation: A clear indicator shows whether a post is recommended or not.
 - Anime Ratings: Users can rate animes, providing more insight on their experience of animes.
- ![image](https://github.com/user-attachments/assets/df7c80ea-937f-47b9-b086-e9de58f86b46)
+- ![image](https://github.com/user-attachments/assets/df7c80ea-937f-47b9-b086-e9de58f86b46)
 
 ##### Responsive Design
 - Mobile-Friendly Layout: The website features a responsive design, ensuring a good user experience on both desktop and mobile devices.
