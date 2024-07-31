@@ -141,6 +141,7 @@ Social media links in the footer were enhanced with icons from Font Awesome.
 * Bootstrap
 
 ### Testing 
+###### Functional
 Description:
 
 Ensure a user can sign up to the website
@@ -197,13 +198,15 @@ We tested all the navigation links to make sure they take you to the right pages
 Steps:
 Click the button/link for each page.
 - Home -> index.html
-Browse -> blog_list.html
-SharePost -> share_post.html
-News -> news.html
-Post in detail(select post of choice) -> post_detail.html
-Logout -> logout.html in django accounts
-Login -> login.html in django accounts
-Register -> Signup.html in django accounts
+- Browse -> blog_list.html
+- SharePost -> share_post.html
+- News -> news.html
+- Post in detail(select post of choice) -> post_detail.html
+- Logout -> logout.html in django accounts
+- Login -> login.html in django accounts
+- Register -> Signup.html in django accounts
+
+###### Unit Testing
 
 
 ### Deployment 
