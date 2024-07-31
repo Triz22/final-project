@@ -238,6 +238,10 @@ Click the button/link for each page.
 ###### CSS Validation
 ![image](https://github.com/user-attachments/assets/ebc0a5e8-a895-446d-a977-85b1de93f9e8)
 
+###### Lighthouse Score
+![image](https://github.com/user-attachments/assets/29a5e8cd-1dcb-42f0-a007-cc5baba04601)
+
+
 
 
 
