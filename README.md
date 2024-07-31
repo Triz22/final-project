@@ -3,15 +3,16 @@ This is a full-stack framework project built using Django, Python, HTML and CSS.
 
 # Table of Contents
 1. UX
-2. Scope
-3. Structure
-4. Wireframe
-5. Database schema
-6. Surface
-7. Technologies used
-8. Testing
-9. Deployment
-10. Credits
+2. Agile development
+3. Scope
+4. Structure
+5. Wireframe
+6. Database schema
+7. Surface
+8. Technologies used
+9. Testing
+10. Deployment
+11. Credits
 
 ## UX
 
@@ -45,6 +46,10 @@ These users will be looking for:
 * As a User, I can log in/out off my account if I wish so that I can connect or disconnect from the website.
 * As a User, I can easily navigate through the site so that I can view desired content.
 * As a site Admin, I can access the admin panel so that I can manage posts,comments and news content.
+
+### Agile Development
+While this is a solo project I aimed to follow the Agile methodologies by creating my user stories with issues on github and creating a kanban board to manage deadlines.
+
 
 ### Scope
 #### Features Implemented
