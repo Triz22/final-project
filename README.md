@@ -231,7 +231,8 @@ Click the button/link for each page.
 ![image](https://github.com/user-attachments/assets/e3e44fa4-d3d2-4ca2-82e2-6bc8e9dadbad)
 ![image](https://github.com/user-attachments/assets/12771181-7f90-4720-bb0e-969e496cb07d)
 ![image](https://github.com/user-attachments/assets/a96bad9e-76b2-4677-ac9b-68e586760a6a)
-![image](https://github.com/user-attachments/assets/914e925c-6695-413e-90ac-39788d3a6750)
+![image](https://github.com/user-attachments/assets/c5b18021-22e4-4b68-a74f-0c84e4169a69)
+
 
 ###### CSS Validation
 ![image](https://github.com/user-attachments/assets/ebc0a5e8-a895-446d-a977-85b1de93f9e8)
