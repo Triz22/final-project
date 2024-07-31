@@ -140,6 +140,72 @@ Social media links in the footer were enhanced with icons from Font Awesome.
 
 * Bootstrap
 
+### Testing 
+Description:
+
+Ensure a user can sign up to the website
+
+Steps:
+
+Navigate to AnimeWorld and click Login/Register displayed on login main section and navigation tab.
+Click 'Sign up' link
+Enter email, username and password
+Click sign up button which submits information
+Expected:
+
+They are directed to the home page and are displayed a message confirming success.
+
+Actual:
+
+They are directed to the home page and are displayed a message confirming success.
+
+Description:
+
+Ensure a user can sign out
+
+Steps:
+
+Login to the website
+Click the logout button
+Click confirm on the confirm logout page
+Expected:
+
+User is logged out
+
+Actual:
+
+User is logged out
+
+Description
+
+Ensure users can fillout and submit details required for the anime post
+
+Steps: 
+1. Click sharepost tab in navigation
+2. Fill out the form
+3. click submit
+
+Expected:
+User is redirected to browse page displaying their new post.
+
+Actual
+User is redirected to browse page displaying their new post.
+
+Description 
+We tested all the navigation links to make sure they take you to the right pages. This involved clicking on each link on every page to confirm they work as intended.
+
+Steps:
+Click the button/link for each page.
+- Home -> index.html
+Browse -> blog_list.html
+SharePost -> share_post.html
+News -> news.html
+Post in detail(select post of choice) -> post_detail.html
+Logout -> logout.html in django accounts
+Login -> login.html in django accounts
+Register -> Signup.html in django accounts
+
+
 ### Deployment 
 #### Github Deployment 
 
