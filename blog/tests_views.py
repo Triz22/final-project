@@ -19,4 +19,11 @@ class BlogViewsTest(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'blog/index.html')
 
+    def test_share_post_view_get(self):
         
+        self.client.login(username='testuser', password='testpassword')
+        response = self.client.get(reverse('share_post'))
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'blog/share_post.html')
+        self.assertIsInstance(response.context['post_form'], PostForm)
+
