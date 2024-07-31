@@ -27,3 +27,13 @@ class BlogViewsTest(TestCase):
         self.assertTemplateUsed(response, 'blog/share_post.html')
         self.assertIsInstance(response.context['post_form'], PostForm)
 
+    def test_share_post_view_post_valid(self):
+
+        self.client.login(username='testuser', password='testpassword')
+        data = {'title':'New Post', 'content':'New Content'}
+        response = self.client.post(reverse('share_post'), data)
+        self.assertEqual(response.status_code, 302)
+        self.assertTrue(Post.objects.filter(title='New Post').exists())
+        
+
+
