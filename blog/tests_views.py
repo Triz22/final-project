@@ -65,3 +65,9 @@ class BlogViewsTest(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'blog/news.html')
         self.assertContains(response, self.news.title)
+
+    def test_delete_post_view(self):
+        self.client.login(username='testuser', password='testpassword')
+        response = self.client.post(reverse('delete_post', args=[self.post.id]))
+        self.assertEqual(response.status_code, 302)
+        self.assertFalse(Post.objects.filter(id=self.post.id).exists())
