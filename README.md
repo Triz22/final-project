@@ -121,7 +121,8 @@ A text box beside the image welcomes visitors, encouraging them to join the Anim
 My header was dissappearing when I deployed because I did not gather my static files properly 'I had to run the collectstatic command line in the terminal'
 I couldn't upload an image when sharing a post because firstly my api key was incorrect it had '<>' around them which was needed to be removed, I then needed to make sure it matched the configuration variable settings on heroku.
 My home page would not load because I forgot to add an endif tag. I figures this out by reading the error information provided when debug is set to True.
-My share post function was not working when debug was set to false
+My share post function was not working when debug was set to false.
+I raised an error with a debug output of status code 500. My browser would not load. This was because my get_success method was referenced wrongly 'get-success' in my form_valid method. I corrected this by removing the hyphen and adding the correct underscore syntax. 
 
 ### Technologies used
 * Gitpod
@@ -225,6 +226,19 @@ Click the button/link for each page.
 ###### Unit Testing
 
 ![image](https://github.com/user-attachments/assets/ca7c74f3-5d1e-4cda-a761-6a3ff756165b)
+
+###### HTML Validation 
+![image](https://github.com/user-attachments/assets/e3e44fa4-d3d2-4ca2-82e2-6bc8e9dadbad)
+![image](https://github.com/user-attachments/assets/12771181-7f90-4720-bb0e-969e496cb07d)
+![image](https://github.com/user-attachments/assets/a96bad9e-76b2-4677-ac9b-68e586760a6a)
+![image](https://github.com/user-attachments/assets/914e925c-6695-413e-90ac-39788d3a6750)
+
+###### CSS Validation
+![image](https://github.com/user-attachments/assets/ebc0a5e8-a895-446d-a977-85b1de93f9e8)
+
+
+
+
 
 
 ### Deployment 
