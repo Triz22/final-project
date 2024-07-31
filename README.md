@@ -80,13 +80,14 @@ A text box beside the image welcomes visitors, encouraging them to join the Anim
 ##### Likes
 - Like/Unlike Posts: Users can like or unlike posts to show their appreciation.
 - Like Count: Display the total number of likes each post has received.
-- 
-##### Post Recommendations
+- ![image](https://github.com/user-attachments/assets/e62200e6-0f98-4b0f-8d87-c8c8cac6399f)
+
+
+##### Post Recommendations & Ratings
 - Recommendation Indicator: Posts can be marked as recommended by the author.
 - Display Recommendation: A clear indicator shows whether a post is recommended or not.
- 
-##### Ratings
-- Anime Ratings: Users can rate animes, providing more insight on their experience of animes..
+- Anime Ratings: Users can rate animes, providing more insight on their experience of animes.
+ ![image](https://github.com/user-attachments/assets/df7c80ea-937f-47b9-b086-e9de58f86b46)
 
 ##### Responsive Design
 - Mobile-Friendly Layout: The website features a responsive design, ensuring a good user experience on both desktop and mobile devices.
@@ -94,6 +95,8 @@ A text box beside the image welcomes visitors, encouraging them to join the Anim
   
 ##### Admin Panel
 - Django Admin: Utilizes Django's built-in admin interface for managing users, posts, comments, and other site content.
+- ![image](https://github.com/user-attachments/assets/c7c9ad96-c9f7-4adc-b746-fd616f98ec41)
+
 
 ### Database Schema
 ![Screenshot_19-7-2024_102714_dbdiagram io](https://github.com/user-attachments/assets/de494ce3-3bc1-4e2e-8202-50f27448c6e3)
