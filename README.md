@@ -118,11 +118,12 @@ A text box beside the image welcomes visitors, encouraging them to join the Anim
 
 #### Bugs and Issues
 
-My header was dissappearing when I deployed because I did not gather my static files properly 'I had to run the collectstatic command line in the terminal'
-I couldn't upload an image when sharing a post because firstly my api key was incorrect it had '<>' around them which was needed to be removed, I then needed to make sure it matched the configuration variable settings on heroku.
-My home page would not load because I forgot to add an endif tag. I figures this out by reading the error information provided when debug is set to True.
-My share post function was not working when debug was set to false.
-I raised an error with a debug output of status code 500. My browser would not load. This was because my get_success method was referenced wrongly 'get-success' in my form_valid method. I corrected this by removing the hyphen and adding the correct underscore syntax. 
+- My header was dissappearing when I deployed because I did not gather my static files properly 'I had to run the collectstatic command line in the terminal'
+- I couldn't upload an image when sharing a post because firstly my api key was incorrect it had '<>' around them which was needed to be removed, I then needed to make sure it matched the configuration variable settings on heroku.
+- My home page would not load because I forgot to add an endif tag. I figures this out by reading the debug ouput information provided when debug is set to True.
+- My share post function was not working when debug was set to false, this was because my cloudinary url was wrapped with <>.
+- I raised an error with a debug output of status code 500. My browser would not load. This was because my get_success method was referenced wrongly 'get-success' in my form_valid method. I corrected this by removing the hyphen and adding the correct underscore syntax.
+- My blog list page elements where positioned wrongly so I validated the html template and found out I had a trailing div. I removed this div from my template.
 
 ### Technologies used
 * Gitpod
