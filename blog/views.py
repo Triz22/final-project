@@ -94,6 +94,13 @@ class EditPost(UpdateView):
     template_name = 'blog/edit_post.html'
     form_class = PostForm
 
+    def form_valid(self, form):
+        form.save()
+        messages.success(self.request, 'Post submitted successfully!')
+        return redirect(self.get_success-url())
+
+    def form_invalid
+
 @method_decorator(login_required,name='dispatch')
 class PostLike(View):
     """
