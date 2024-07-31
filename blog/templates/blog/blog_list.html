@@ -27,8 +27,9 @@
                         <h5 class="card-title">{{post.anime_title}}</h5>
                         <p class="card-text">{{post.description |truncatechars:100}}.</p>
                         <p class="card-text">{{post.created_on}}.</p>
+                    </div>
                 </a>
-            </div>
+            
             {% if user.is_authenticated and user.id == post.author.id %}
             <div class="text-center mb-2">
                 <!-- EDIT AND DELETE BUTTONS -->
