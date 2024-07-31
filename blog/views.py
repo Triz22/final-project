@@ -99,9 +99,13 @@ class EditPost(UpdateView):
         messages.success(self.request, 'Post submitted successfully!')
         return redirect(self.get_success-url())
 
-    def form_invalid
+    def form_invalid(self, form):
+        messages.error(self.request, 'Post could not be updated. Please try again.')
+        return self.render_to_response(self.get_context_data(form=form))
+        
+    
 
-@method_decorator(login_required,name='dispatch')
+@method_decorator(login_required,name='dispatch')S
 class PostLike(View):
     """
     Like and unlike post class based view
