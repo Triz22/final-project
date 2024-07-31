@@ -50,6 +50,8 @@ These users will be looking for:
 ### Agile Development
 While this is a solo project I aimed to follow the Agile methodologies by creating my user stories with issues on github and creating a kanban board to manage deadlines.
 ![image](https://github.com/user-attachments/assets/f802e19a-61f3-4f68-b670-67a78d92625f)
+![image](https://github.com/user-attachments/assets/f6b04a2c-c339-4bb2-b5ad-b4be1a935a9b)
+
 
 
 
