@@ -102,6 +102,10 @@ A text box beside the image welcomes visitors, encouraging them to join the Anim
 ![Screenshot_19-7-2024_102714_dbdiagram io](https://github.com/user-attachments/assets/de494ce3-3bc1-4e2e-8202-50f27448c6e3)
 
 ### Surface
+The home page image is really important as it displays a plethora of characters in various animes all together in one space. It cultures the ethos of the website hence the colors chosen are to support this image.
+The color for the header I chose personally to be #535351 a deep gray for consistency with the image. 
+For the background colour of the main content section I chose a ghost white for contrast with the dark colour. 
+I intended for the AnimeWorld Logo and various buttons to be red especially because of the demographic the would be mostly made up of to engage with the fiery ideals of popular animes such as demon slayer. 
 
 #### Bugs and Issues
 
@@ -127,16 +131,19 @@ Python was utilized in the development of the application.
 Version control was managed with Git, including regular commits and pushes during development.
 
 * GitHub
-The website’s source code is available on GitHub and deployed via GitHub Pages.
+The website’s source code is available on GitHub.
 
 * Font Awesome
 Social media links in the footer were enhanced with icons from Font Awesome.
 
 * Bootstrap
+Used for styling and making the website responsive  
 
 * Postgres
+Employed as the primary database for storing user data, posts, comments.
 
-* Cloudinary 
+* Cloudinary
+Utilized for managing and serving uploaded images.  
 
 * Bootstrap
 
