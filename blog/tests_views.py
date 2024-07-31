@@ -35,5 +35,9 @@ class BlogViewsTest(TestCase):
         self.assertEqual(response.status_code, 302)
         self.assertTrue(Post.objects.filter(title='New Post').exists())
         
-
+    def test_post_detail_view_get(self):
+        response = self.client.get(reverse('post_detail', args=[self.post.id]))
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'blog/post_detail.html')
+        self.assertContains(response, self.post.title)
 
