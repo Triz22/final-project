@@ -261,9 +261,13 @@ In Chrome DevTools: Open your website in Google Chrome, right-click, and select 
 
 Using the Lighthouse CLI: You can also run Lighthouse from the command line to automate audits and make them part of your build process.
 
-![image](https://github.com/user-attachments/assets/29a5e8cd-1dcb-42f0-a007-cc5baba04601)
+
 
 - ![image](https://github.com/user-attachments/assets/08b800b9-686c-4413-9e41-bab29d5a0f4d)
+- ![image](https://github.com/user-attachments/assets/035a6982-ddfd-41e6-89a1-0daa40aa2b01)
+- ![image](https://github.com/user-attachments/assets/4da86d03-0dae-4999-b49d-9e91f322732d)
+- ![image](https://github.com/user-attachments/assets/33c0140d-2385-4161-9f3a-0fdb92a89073)
+
 
 
 
