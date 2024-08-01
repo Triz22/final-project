@@ -4,15 +4,15 @@ This is a full-stack framework project built using Django, Python, HTML and CSS.
 # Table of Contents
 1. [UX](#ux)
 2. [Agile development](#agile-development)
-3. Scope
-4. Structure
-5. Wireframe
-6. Database schema
-7. Surface
-8. Technologies used
-9. Testing
-10. Deployment
-11. Credits
+3. [Scope](#scope)
+4. [Structure](#structure)
+5. [Wireframes](#wireframes)
+6. [Database schema](#database-schema)
+7. [Surface](#surface)
+8. [Technologies used](#technologies-used)
+9. [Testing](#testing)
+10. [Deployment](#deployment)
+11. [Credits](#credits)
 
 ## UX
 
