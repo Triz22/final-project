@@ -107,7 +107,7 @@ A text box beside the image welcomes visitors, encouraging them to join the Anim
 - ![image](https://github.com/user-attachments/assets/c7c9ad96-c9f7-4adc-b746-fd616f98ec41)
 
 ### Wireframes
-[a link] (https://github.com/Triz22/final-project/blob/main/wireframes.md) 
+- (https://github.com/Triz22/final-project/blob/main/wireframes.md) 
 
 
 ### Database Schema
