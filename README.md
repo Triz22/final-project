@@ -275,7 +275,16 @@ git push: Uploaded all committed changes to the GitHub repository.
 - Once the deployment process is complete, the app will be live on Heroku after a short wait.
 
 ### Credits
+This project was made possible thanks to the support and resources provided by various individuals and organizations:
 
+- David Calikes for his expert tutor support.
+- Iris Smok for her valuable tutoring and guidance.
+- The Code Institute Bootcamp Coaches for their continuous support and assistance.
+
+Additionally, the following resources were instrumental in the development of this project:
+
+- YouTube for its comprehensive tutorial videos.
+- The learning management system, particularly the "I Think Therefore I Blog" module, which provided essential knowledge and inspiration.
 
 
 
