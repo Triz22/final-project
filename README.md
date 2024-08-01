@@ -252,8 +252,19 @@ Click the button/link for each page.
 ###### CSS Validation
 ![image](https://github.com/user-attachments/assets/ebc0a5e8-a895-446d-a977-85b1de93f9e8)
 
-###### Lighthouse Score
+###### Lighthouse 
+Lighthouse is a handy tool for checking out and improving various aspects of your website, like performance, accessibility, best practices, and SEO. While Lighthouse audits offer great insights, it’s crucial to pair them with other SEO and web development best practices to fully optimize your site. Keep an eye on your website regularly and update it to keep up with changing standards and user needs.
+
+Here’s how to use Lighthouse for these audits:
+
+In Chrome DevTools: Open your website in Google Chrome, right-click, and select "Inspect." Head to the "Lighthouse" tab, pick the categories you want to test (Performance, Accessibility, Best Practices, and SEO), and hit "Generate report." Check out the report for tips and areas to improve.
+
+Using the Lighthouse CLI: You can also run Lighthouse from the command line to automate audits and make them part of your build process.
+
 ![image](https://github.com/user-attachments/assets/29a5e8cd-1dcb-42f0-a007-cc5baba04601)
+
+- ![image](https://github.com/user-attachments/assets/08b800b9-686c-4413-9e41-bab29d5a0f4d)
+
 
 
 
