@@ -1,5 +1,6 @@
 # AnimeWorld
-![image](https://github.com/user-attachments/assets/2dc5bc3f-2d41-46c7-80d4-18eb5241adec)
+![image](https://github.com/user-attachments/assets/cfb23098-4506-4b09-9c14-f40c771e6648)
+
 
 This is a full-stack framework project built using Django, Python, HTML and CSS. My goal is to create a functioning and responsive website, that allows users to share posts about recent animes they have  watched.  This project has been built for entertainment purposes.
 
