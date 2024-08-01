@@ -3,7 +3,7 @@ This is a full-stack framework project built using Django, Python, HTML and CSS.
 
 # Table of Contents
 - UX
-2. Agile development [Section `Agile development`](#Agile Development)
+2. Agile development [Section `Agile development`](#Agile)
 3. Scope
 4. Structure
 5. Wireframe
