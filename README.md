@@ -4,6 +4,8 @@
 
 This is a full-stack framework project built using Django, Python, HTML and CSS. My goal is to create a functioning and responsive website, that allows users to share posts about recent animes they have  watched.  This project has been built for entertainment purposes.
 
+Link to live site - https://animeblog-989856e3d754.herokuapp.com/
+
 # Table of Contents
 1. [UX](#ux)
 2. [Agile development](#agile-development)
@@ -67,6 +69,11 @@ The home page features a vibrant and engaging image of popular anime characters,
 A text box beside the image welcomes visitors, encouraging them to join the AnimeWorld community by logging in or registering.
 
 ![image](https://github.com/user-attachments/assets/9233cfd8-7042-458b-801b-ff2acd0d5d16)
+
+##### News page
+
+- The News Page of our anime blog website keeps users updated with the latest developments in the anime world. From new series announcements and exclusive trailers to box office successes and special events, this section ensures fans stay informed about all the exciting happenings in the anime industry.
+- ![image](https://github.com/user-attachments/assets/8e67e7d0-9f4b-4efa-8522-4276f6ccf79e)
 
 
 ##### User Authentication and Authorization
@@ -257,13 +264,13 @@ Click the button/link for each page.
 ### Deployment 
 #### Github Deployment 
 
-The website was developed using Gitpod and uploaded to the 'final-project' repository on GitHub.
+1. The website was developed using Gitpod and uploaded to the 'final-project' repository on GitHub.
 
-The following Git commands were used during development to push the code to the remote repository:
+2. The following Git commands were used during development to push the code to the remote repository:
 
-git add [file]: Added files to the staging area before committing.
-git commit -m [commit message]: Recorded and saved changes to the local repository.
-git push: Uploaded all committed changes to the GitHub repository.
+- git add [file]: Added files to the staging area before committing.
+- git commit -m [commit message]: Recorded and saved changes to the local repository.
+- git push: Uploaded all committed changes to the GitHub repository.
 
 #### Heroku 
 
