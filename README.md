@@ -160,7 +160,7 @@ Utilized for managing and serving uploaded images.
 
 ### Testing 
 ###### Functional
-Description:
+- Description:
 
 Ensure a user can sign up to the website
 
@@ -178,7 +178,7 @@ Actual:
 
 They are directed to the home page and are displayed a message confirming success.
 
-Description:
+- Description:
 
 Ensure a user can sign out
 
@@ -195,7 +195,7 @@ Actual:
 
 User is logged out
 
-Description
+- Description
 
 Ensure users can fillout and submit details required for the anime post
 
@@ -210,7 +210,7 @@ User is redirected to browse page displaying their new post.
 Actual
 User is redirected to browse page displaying their new post.
 
-Description 
+- Description 
 We tested all the navigation links to make sure they take you to the right pages. This involved clicking on each link on every page to confirm they work as intended.
 
 Steps:
@@ -223,6 +223,8 @@ Click the button/link for each page.
 - Logout -> logout.html in django accounts
 - Login -> login.html in django accounts
 - Register -> Signup.html in django accounts
+
+- I used coolors to check the contrasting for my page and initially I received a low result so I increased the brightness of my elements against the dark background.  
 
 ###### Unit Testing 
 
