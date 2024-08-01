@@ -2,7 +2,7 @@
 This is a full-stack framework project built using Django, Python, HTML and CSS. My goal is to create a functioning and responsive website, that allows users to share posts about recent animes they have  watched.  This project has been built for entertainment purposes.
 
 # Table of Contents
-1. UX
+- UX
 2. Agile development
 3. Scope
 4. Structure
