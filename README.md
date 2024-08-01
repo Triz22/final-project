@@ -106,6 +106,9 @@ A text box beside the image welcomes visitors, encouraging them to join the Anim
 - Django Admin: Utilizes Django's built-in admin interface for managing users, posts, comments, and other site content.
 - ![image](https://github.com/user-attachments/assets/c7c9ad96-c9f7-4adc-b746-fd616f98ec41)
 
+### Wireframes
+[a link] (https://github.com/Triz22/final-project/blob/main/wireframes.md) 
+
 
 ### Database Schema
 ![Screenshot_19-7-2024_102714_dbdiagram io](https://github.com/user-attachments/assets/de494ce3-3bc1-4e2e-8202-50f27448c6e3)
