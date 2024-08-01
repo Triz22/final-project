@@ -129,6 +129,7 @@ class NewsPage(generic.ListView):
 
     queryset = News.objects.all().order_by('created_on')
     template_name = 'blog/news.html'
+    paginate_by = 3
     
 def delete_post(request, post_id):
     """

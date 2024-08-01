@@ -30,6 +30,9 @@ main {
     font-weight: bold;
 }
 
+.nav-link {
+    color: #fff;
+}
 /* Welcome Box */
 .welcome-box {
     border: 2px solid red;
@@ -177,8 +180,4 @@ form .btn-signup {
     background-color: #ffffff;
     margin-bottom: 20px;
     font-size: 1rem;
-}
-
-.helptext {
-    display: none;
 }
